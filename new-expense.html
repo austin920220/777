@@ -29,11 +29,11 @@
           </div>
           <div class="form-group">
             <label for="exampleInputFile">項目</label>
-            <input id="name" type="text" class="form-control" name="name" placeholder="吃屎">
+            <input id="name" type="text" class="form-control" name="name" placeholder="">
           </div>
           <div class="form-group">
             <label for="exampleInputFile">金額</label>
-            <input id="amount" type="number" class="form-control" name="amount" placeholder="自給自足">
+            <input id="amount" type="number" class="form-control" name="amount" placeholder="多一點拜託">
           </div>
         </form>
         <button id="submit" class="btn btn-primary">Submit</button>
@@ -53,6 +53,7 @@
         });
         expensesCollection.save();
         alert("你長太醜了!儲存失敗！");
+        alert("好啦，其實還是有存到");
         date:$("#date").val("");
         categoryId:$("#category").val("");
         name:$("#name").val("");
